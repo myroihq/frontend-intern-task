@@ -1,0 +1,188 @@
+.container {
+    display: flex;
+    box-sizing:  border-box;
+    margin: 0;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    padding-top: 20px;
+    height:100vh;
+    font-family: Arial, sans-serif;
+  }
+  .top{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+  }
+  .resultsCard{
+    width: 50%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  .breakdownCard{
+    width:50%;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .card{
+    width: 50%;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    
+    margin-bottom: 20px;
+  }
+  
+  .cardTitle {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .inputGrid {
+    display: flex;
+   flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .input {
+    
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  .button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  .button:hover {
+    background-color: #0056b3;
+  }
+  
+  .tableWrapper {
+    overflow-x: auto;
+  }
+  
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .table th,
+  .table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+  }
+  
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 34px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196f3;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(26px);
+  }
+  
+  .darkMode {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .darkMode .card {
+    background-color: #444;
+    color: #fff;
+  }
+  
+  .darkMode .input {
+    background-color: #555;
+    color: #fff;
+    border-color: #666;
+  }
+  
+  .darkMode .table th {
+    background-color: #555;
+  }
+  
+  .darkMode .table th,
+  .darkMode .table td {
+    border-color: #666;
+  }
+  .downloadButton {
+    margin-top: 20px;
+    background-color: #28a745;
+  }
+  
+  .downloadButton:hover {
+    background-color: #218838;
+  }
+  
+  @media (max-width: 600px) {
+    .inputGrid {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  
