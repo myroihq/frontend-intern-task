@@ -7,7 +7,7 @@
     align-items: center;
     width: 100%;
     padding-top: 20px;
-    height:100vh;
+    min-height:100vh;
     font-family: Arial, sans-serif;
   }
   .top{
@@ -32,6 +32,7 @@
     margin-top: 20px;
     margin-bottom: 20px;
   }
+  
   .card{
     width: 50%;
     background-color: #ffffff;
@@ -185,4 +186,15 @@
       flex-direction: column;
     }
   }
+  .darkMode {
+    background-color: #333;
+    color: #fff;
+  }
   
+  .darkMode .card,
+  .darkMode .breakdownCard {
+    background-color: #444;
+    color: #fff;
+  }
+  
+ 
